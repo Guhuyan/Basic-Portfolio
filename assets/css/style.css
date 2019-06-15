@@ -5,9 +5,14 @@
 }
 html, body {
     height: 100%;
+    background-image: url("../images/cork-wallet.png")
+}
+h1 {
+    font-size: 2em;
 }
 .header {
     border-bottom: 1px solid #cccccc;
+    background-color: #ffffff;
 }
 .header-container {
     width: 960px;
@@ -15,11 +20,11 @@ html, body {
     margin: 0 auto;
 }
 .header-name-container {
-    width: 220px;
+    width: auto;
     text-align: center;
     background-color: #4aaaa5;
     color: #ffffff;
-    padding: 27px;
+    padding: 29px;
     position: absolute;
 }
 .header-nav {
@@ -27,6 +32,7 @@ html, body {
     padding: 36px 0;
 }
 li {
+    font-size: 1.25em;
     display: inline;
     padding: 0 15px;
 }
@@ -35,9 +41,11 @@ li:nth-child(1) {
 }
 li:nth-child(3) {
     border-left: 1px solid #cccccc;
+    padding-right: 0;
 }
 main {
     padding: 40px 30px 30px 30px;
+    background-color: #ffffff;
 }
 .main-container {
     width: 960px;
@@ -50,13 +58,14 @@ main {
 }
 .footer {
     background-color: #666666;
-    position: relative;
-    height: 100px;
-    margin: -100px;
-    clear: both;
+    height: 80px;
+    border-top: 8px solid #4aaaa5;
 }
-.footer p {
+h6 {
+    top: 32px;
+    position: relative;
     color: #cccccc;
+    text-align: center;
 }
 h1 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -65,11 +74,17 @@ main h1 {
     color: #4aaaa5;
 }
 p {
+    padding-top: 10px;
     line-height: 1.5;
 }
 a {
     text-decoration: none;
     color: #666666;
+}
+img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 hr {
     border: none;
@@ -91,6 +106,7 @@ hr {
     box-sizing: border-box;
     text-align: center;
     border: 1px solid #dddddd;
+    background-color: #ffffff;
 }
 .contact-form h1{
     margin-top: 0;
@@ -110,7 +126,7 @@ hr {
     text-transform: uppercase;
     font-size: 14px;
 }
-.text-block input,.text-block textarea{
+.text-block input,.text-block textarea {
     width: 100%;
     border: none;
     background: none;
@@ -118,9 +134,11 @@ hr {
     font-size: 18px;
     margin-top: 6px;
 }
-.text-block:nth-child(5) input,.text-block:nth-child(5) textarea{
+.text-block:nth-child(8) input,.text-block:nth-child(8) textarea{
     height: 200px;
-    
+}
+.text-block input[type=text]:focus {
+    border: 3x solid #555;
 }
 .btn {
     display: block;
@@ -133,3 +151,25 @@ hr {
     width: 12%;
     position: left;
 }
+h3 {
+    font-size: 1.2em;
+    text-align: start;
+    color: #666666;
+    margin-top: 16px;
+}
+
+.projects {
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.projects:nth-child(1) {
+    background-image: url("http://placehold.it/200x200")
+}
+.clearfix::after {
+    content: ""; 
+    display: block;
+    clear: both;
+    }
