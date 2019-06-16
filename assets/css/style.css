@@ -134,12 +134,6 @@ hr {
     font-size: 18px;
     margin-top: 6px;
 }
-.text-block:nth-child(8) input,.text-block:nth-child(8) textarea{
-    height: 200px;
-}
-.text-block input[type=text]:focus {
-    border: 3x solid #555;
-}
 .btn {
     display: block;
     background: #4aaaa5;
@@ -148,7 +142,7 @@ hr {
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 20px;
-    width: 12%;
+    width: 100px;
     position: left;
 }
 h3 {
@@ -164,6 +158,10 @@ h3 {
     float: left;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+.projects h2 {
+    position: relative;
+    text-align: center;
 }
 .projects:nth-child(1) {
     background-image: url("http://placehold.it/200x200")
